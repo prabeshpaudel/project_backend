@@ -13,7 +13,8 @@ import "dotenv/config";
 
 const app = express();
 import mongoose from "mongoose";
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb+srv://rudaiba:kanbas123@cluster0.eyxehye.mongodb.net/Kanbas?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(CONNECTION_STRING);
 //const db = mongoose.connection;
 //db.on('error', console.error.bind(console, 'connection error:'));
